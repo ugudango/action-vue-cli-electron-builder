@@ -115,8 +115,8 @@ const runAction = () => {
 
 	log(`${release ? "Releasing" : "Building"} the Electron app…`);
 	run(
-		`${useNpm ? "npx --no-install" : "yarn run"} electron-builder --${platform} ${
-			release ? "--publish always" : ""
+		`${useNpm ? "npm run" : "yarn run"} electron:build --${platform} ${
+			release ? "-p always" : ""
 		}`,
 	);
 };
