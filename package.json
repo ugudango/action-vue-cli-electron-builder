@@ -1,5 +1,5 @@
 {
-	"name": "action-electron-builder",
+	"name": "action-vue-cli-electron-builder",
 	"version": "1.0.0",
 	"description": "GitHub Action for building and releasing Electron apps",
 	"author": {
@@ -7,7 +7,7 @@
 		"email": "me@samuelmeuli.com",
 		"url": "https://samuelmeuli.com"
 	},
-	"repository": "github:samuelmeuli/action-electron-builder",
+	"repository": "github:ugudango/action-vue-cli-electron-builder",
 	"license": "MIT",
 	"private": true,
 	"main": "./index.js",
