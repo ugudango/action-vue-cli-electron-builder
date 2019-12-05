@@ -114,11 +114,10 @@ const runAction = () => {
 	}
 
 	log(`${release ? "Releasing" : "Building"} the Electron app…`);
-	run(
-		`${useNpm ? "npm run" : "yarn run"} electron:build --${platform} ${
-			release ? "-p always" : ""
-		}`,
-	);
+	if(release)
+		run(`${useNpm ? "npm run" : "yarn run"} release`);
+	else
+		run(`${useNpm ? "npm run" : "yarn run"} electron:build`);
 };
 
 runAction();
